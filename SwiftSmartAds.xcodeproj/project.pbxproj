@@ -19,8 +19,39 @@
 		636A3F9E1E8D60DA002BC4E9 /* DDNASDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 636A3F931E8D60DA002BC4E9 /* DDNASDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		636A3F9F1E8D60DA002BC4E9 /* DDNASettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 636A3F941E8D60DA002BC4E9 /* DDNASettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		636A3FA01E8D60DA002BC4E9 /* DDNATransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 636A3F951E8D60DA002BC4E9 /* DDNATransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636A3FA91E8D6615002BC4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A3FA81E8D6615002BC4E9 /* AppDelegate.swift */; };
+		636A3FAB1E8D6615002BC4E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A3FAA1E8D6615002BC4E9 /* ViewController.swift */; };
+		636A3FAE1E8D6615002BC4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636A3FAC1E8D6615002BC4E9 /* Main.storyboard */; };
+		636A3FB01E8D6615002BC4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636A3FAF1E8D6615002BC4E9 /* Assets.xcassets */; };
+		636A3FB31E8D6615002BC4E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636A3FB11E8D6615002BC4E9 /* LaunchScreen.storyboard */; };
+		636A3FB81E8D6674002BC4E9 /* DeltaDNA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636A3F801E8D58C5002BC4E9 /* DeltaDNA.framework */; };
+		636A3FB91E8D6674002BC4E9 /* DeltaDNA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636A3F801E8D58C5002BC4E9 /* DeltaDNA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED099D37393436CEDAAE17F6 /* libPods-DeltaDNA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CB2A01BB75287460714E2F /* libPods-DeltaDNA.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		636A3FBA1E8D6674002BC4E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636A3F751E8D5823002BC4E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 636A3F7F1E8D58C5002BC4E9;
+			remoteInfo = DeltaDNA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		636A3FBC1E8D6674002BC4E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				636A3FB91E8D6674002BC4E9 /* DeltaDNA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21CB2A01BB75287460714E2F /* libPods-DeltaDNA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaDNA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +70,14 @@
 		636A3F941E8D60DA002BC4E9 /* DDNASettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DDNASettings.h; path = ../Pods/DeltaDNA/DeltaDNA/DDNASettings.h; sourceTree = "<group>"; };
 		636A3F951E8D60DA002BC4E9 /* DDNATransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DDNATransaction.h; path = ../Pods/DeltaDNA/DeltaDNA/DDNATransaction.h; sourceTree = "<group>"; };
 		636A3FA11E8D6388002BC4E9 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		636A3FA61E8D6615002BC4E9 /* SwiftSmartAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSmartAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		636A3FA81E8D6615002BC4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		636A3FAA1E8D6615002BC4E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		636A3FAD1E8D6615002BC4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		636A3FAF1E8D6615002BC4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		636A3FB21E8D6615002BC4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		636A3FB41E8D6615002BC4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636A3FBD1E8D679C002BC4E9 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		AF9EEF2C5CE61865EEE22734 /* Pods-DeltaDNA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNA/Pods-DeltaDNA.debug.xcconfig"; sourceTree = "<group>"; };
 		B626DC1B395572C1AAB360FE /* Pods-DeltaDNA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaDNA.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaDNA/Pods-DeltaDNA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +91,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		636A3FA31E8D6615002BC4E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636A3FB81E8D6674002BC4E9 /* DeltaDNA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				636A3F821E8D58C5002BC4E9 /* DeltaDNA */,
+				636A3FA71E8D6615002BC4E9 /* SwiftSmartAds */,
 				636A3F811E8D58C5002BC4E9 /* Products */,
 				9803B3692344F647F325277B /* Pods */,
 				6DF59D9DABFB4F61FB29D2E4 /* Frameworks */,
@@ -69,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				636A3F801E8D58C5002BC4E9 /* DeltaDNA.framework */,
+				636A3FA61E8D6615002BC4E9 /* SwiftSmartAds.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +141,20 @@
 				636A3FA11E8D6388002BC4E9 /* module.modulemap */,
 			);
 			path = DeltaDNA;
+			sourceTree = "<group>";
+		};
+		636A3FA71E8D6615002BC4E9 /* SwiftSmartAds */ = {
+			isa = PBXGroup;
+			children = (
+				636A3FA81E8D6615002BC4E9 /* AppDelegate.swift */,
+				636A3FAA1E8D6615002BC4E9 /* ViewController.swift */,
+				636A3FAC1E8D6615002BC4E9 /* Main.storyboard */,
+				636A3FAF1E8D6615002BC4E9 /* Assets.xcassets */,
+				636A3FB11E8D6615002BC4E9 /* LaunchScreen.storyboard */,
+				636A3FB41E8D6615002BC4E9 /* Info.plist */,
+				636A3FBD1E8D679C002BC4E9 /* Bridging-Header.h */,
+			);
+			path = SwiftSmartAds;
 			sourceTree = "<group>";
 		};
 		6DF59D9DABFB4F61FB29D2E4 /* Frameworks */ = {
@@ -156,15 +219,40 @@
 			productReference = 636A3F801E8D58C5002BC4E9 /* DeltaDNA.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		636A3FA51E8D6615002BC4E9 /* SwiftSmartAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636A3FB51E8D6615002BC4E9 /* Build configuration list for PBXNativeTarget "SwiftSmartAds" */;
+			buildPhases = (
+				636A3FA21E8D6615002BC4E9 /* Sources */,
+				636A3FA31E8D6615002BC4E9 /* Frameworks */,
+				636A3FA41E8D6615002BC4E9 /* Resources */,
+				636A3FBC1E8D6674002BC4E9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				636A3FBB1E8D6674002BC4E9 /* PBXTargetDependency */,
+			);
+			name = SwiftSmartAds;
+			productName = SwiftSmartAds;
+			productReference = 636A3FA61E8D6615002BC4E9 /* SwiftSmartAds.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		636A3F751E8D5823002BC4E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					636A3F7F1E8D58C5002BC4E9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 846C8UZB42;
+						ProvisioningStyle = Automatic;
+					};
+					636A3FA51E8D6615002BC4E9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 846C8UZB42;
 						ProvisioningStyle = Automatic;
@@ -177,6 +265,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 636A3F741E8D5823002BC4E9;
 			productRefGroup = 636A3F811E8D58C5002BC4E9 /* Products */;
@@ -184,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				636A3F7F1E8D58C5002BC4E9 /* DeltaDNA */,
+				636A3FA51E8D6615002BC4E9 /* SwiftSmartAds */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +283,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636A3FA41E8D6615002BC4E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636A3FB31E8D6615002BC4E9 /* LaunchScreen.storyboard in Resources */,
+				636A3FB01E8D6615002BC4E9 /* Assets.xcassets in Resources */,
+				636A3FAE1E8D6615002BC4E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +339,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		636A3FA21E8D6615002BC4E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636A3FAB1E8D6615002BC4E9 /* ViewController.swift in Sources */,
+				636A3FA91E8D6615002BC4E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		636A3FBB1E8D6674002BC4E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 636A3F7F1E8D58C5002BC4E9 /* DeltaDNA */;
+			targetProxy = 636A3FBA1E8D6674002BC4E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		636A3FAC1E8D6615002BC4E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636A3FAD1E8D6615002BC4E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		636A3FB11E8D6615002BC4E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636A3FB21E8D6615002BC4E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		636A3F791E8D5823002BC4E9 /* Debug */ = {
@@ -380,6 +516,115 @@
 			};
 			name = Release;
 		};
+		636A3FB61E8D6615002BC4E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 846C8UZB42;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSmartAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deltadna.ios.SwiftSmartAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		636A3FB71E8D6615002BC4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 846C8UZB42;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SwiftSmartAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deltadna.ios.SwiftSmartAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -400,6 +645,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		636A3FB51E8D6615002BC4E9 /* Build configuration list for PBXNativeTarget "SwiftSmartAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636A3FB61E8D6615002BC4E9 /* Debug */,
+				636A3FB71E8D6615002BC4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
