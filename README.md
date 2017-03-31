@@ -113,9 +113,10 @@ Below is a step by step guide, it assumes some basic familiarity with Xcode and 
     #ifndef Bridging_Header_h
     #define Bridging_Header_h
 
-    #import <DeltaDNAAds/DeltaDNAAds.h>
+    #import <DeltaDNA/DeltaDNA.h>
 
     #endif /* Bridging_Header_h */
     ```
 
+    Under Build Settings -> Objective-C Bridging Header add `DeltaDNA/Bridging-Header.h`.
     Afterward you can add `import DeltaDNA` to your swift file and continue to integrate the SDK.
