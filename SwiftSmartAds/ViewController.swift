@@ -17,9 +17,12 @@
 import UIKit
 import DeltaDNA
 
-class ViewController: UIViewController, DDNASmartAdsRegistrationDelegate, DDNAInterstitialAdDelegate, DDNARewardedAdDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var sdkVersion: UILabel!
+    
+    var interstitialAd: DDNAInterstitialAd?
+    var rewardedAd: DDNARewardedAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +47,55 @@ class ViewController: UIViewController, DDNASmartAdsRegistrationDelegate, DDNAIn
     @IBAction func showInterstitialAd(_ sender: AnyObject) {
         let interstitialAd = DDNAInterstitialAd(delegate: self)
         interstitialAd?.show(fromRootViewController: self)
+        self.interstitialAd?.delegate = nil
+        self.interstitialAd = interstitialAd
     }
     
     @IBAction func showRewardedAd(_ sender: AnyObject) {
         let rewardedAd = DDNARewardedAd(delegate: self)
         rewardedAd?.show(fromRootViewController: self)
+        self.rewardedAd?.delegate = nil
+        self.rewardedAd = rewardedAd
     }
 }
+
+extension ViewController: DDNASmartAdsRegistrationDelegate {
+    func didRegisterForInterstitialAds() {
+        print("Registered for interstitial ads.")
+    }
+    func didFailToRegisterForInterstitialAds(withReason reason: String!) {
+        print("Failed to register for interstitial ads: \(reason).")
+    }
+    func didRegisterForRewardedAds() {
+        print("Registered for rewarded ads.")
+    }
+    func didFailToRegisterForRewardedAds(withReason reason: String!) {
+        print("Failed to register for rewarded ads: \(reason).")
+    }
+}
+
+extension ViewController: DDNAInterstitialAdDelegate {
+    func didOpen(_ interstitialAd: DDNAInterstitialAd!) {
+        print("Opened interstitial ad.")
+    }
+    func didFail(toOpen interstitialAd: DDNAInterstitialAd!, withReason reason: String!) {
+        print("Failed to open interstitial ad: \(reason).")
+    }
+    func didClose(_ interstitialAd: DDNAInterstitialAd!) {
+        print("Closed interstitial ad.")
+    }
+}
+
+extension ViewController: DDNARewardedAdDelegate {
+    func didOpen(_ rewardedAd: DDNARewardedAd!) {
+        print("Opened rewarded ad.")
+    }
+    func didFail(toOpen rewardedAd: DDNARewardedAd!, withReason reason: String!) {
+        print("Failed to open rewarded ad.")
+    }
+    func didClose(_ rewardedAd: DDNARewardedAd!, withReward reward: Bool) {
+        print("Closed rewarded ad with reward = \(reward)")
+    }
+}
+
 
